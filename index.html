@@ -1,0 +1,69 @@
+<html>
+<head>
+<title> Lab 5 </title>
+<script src="Scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage cookie;
+PImage pepsi;
+PImage chips;
+PImage octopus;
+
+void setup(){
+
+size(1100,1350);
+background(255,0,0);
+frameRate( 30 );
+
+textSize(40);
+fill(0,0,0);
+text("Vegetarian Vending Machine",300,1250);
+
+
+cookie = loadImage("Images/cookie.png");
+pepsi = loadImage("Images/pepsi.png");
+chips = loadImage("Images/chips.png");
+octopus = loadImage("Images/octopus.jpg");
+
+}
+
+
+void draw()
+{
+
+image(cookie,100,100,239,239);
+image(pepsi,425,100,200,238);
+image(chips,750,100,200,240);
+image(octopus,200,500,400,250); 
+noFill();
+strokeWeight(25);
+rect(40,40,1000,1250);
+stroke(0,0,0);
+strokeWeight(25);
+strokeCap(SQUARE);
+line(100,400,975,400);
+strokeWeight(12.5);
+rect(700,500,270,100);
+rect(700,650,270,100);
+rect(700,800,270,100);
+rect(300,1000,375,150);
+strokeWeight(15);
+rect(300,800,50,150);
+ 
+text("Coins",400,900);
+text("We accept $5, $2, $1",400,950);
+
+text("Cookie $8.90",722,565);
+text("Pepsi $5.50",722,715);
+text("Chips $3.30",722,865);
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+
