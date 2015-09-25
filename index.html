@@ -30,33 +30,110 @@ octopus = loadImage("Images/octopus.jpg");
 
 void draw()
 {
-
-image(cookie,100,100,239,239);
-image(pepsi,425,100,200,238);
-image(chips,750,100,200,240);
-image(octopus,200,500,400,250); 
-noFill();
-strokeWeight(25);
-rect(40,40,1000,1250);
-stroke(0,0,0);
-strokeWeight(25);
-strokeCap(SQUARE);
-line(100,400,975,400);
-strokeWeight(12.5);
-rect(700,500,270,100);
-rect(700,650,270,100);
-rect(700,800,270,100);
-rect(300,1000,375,150);
-strokeWeight(15);
-
-rect(300,800,50,150);
+	background(255,0,0);
+	
+	image(cookie,100,100,239,239);
+	image(pepsi,425,100,200,238);
+	image(chips,750,100,200,240);
+	image(octopus,200,500,400,250); 
+	noFill();
+	strokeWeight(25);
+	rect(40,40,1000,1250);
+	stroke(0,0,0);
+	strokeWeight(25);
+	strokeCap(SQUARE);
+	line(100,400,975,400);
+	strokeWeight(12.5);
+	fill(255,0,0)
+	rect(700,500,270,100);
+	fill(255,0,0)
+	rect(700,650,270,100);
+	fill(255,0,0)
+	rect(700,800,270,100);
+	rect(300,1000,375,150);
+	fill(255,0,0)
+	strokeWeight(15);
+	rect(300,800,50,150);
  
-text("Coins",400,900);
-text("We accept $5, $2, $1",400,950);
+	fill(0,0,0);
+	text("Coins",400,900);
+	text("We accept $5, $2, $1",400,950);
 
-text("Cookie $8.90",722,565);
-text("Pepsi $5.50",722,715);
-text("Chips $3.30",722,865);
+	text("Cookie $8.90",722,565);
+	text("Pepsi $5.50",722,715);
+	text("Chips $3.30",722,865);
+
+	fill(0,0,0);
+	textSize(20);
+	text(mouseX,10,25);
+	text(mouseY,100,25);
+
+	if(mouseX > 700 && mouseX < 980 && mouseY > 497 && mouseY < 600)
+	{
+
+		fill(0,255,0);
+		rect(700,500,270,100);
+		fill(0,0,0);
+		textSize(40);
+		text("Cookie $8.90",722,565);
+	
+	}
+
+		if(mouseX > 700 && mouseX < 980 && mouseY > 640 && mouseY < 750)
+	{
+
+		fill(0,255,0);
+		rect(700,650,270,100);
+		fill(0,0,0);
+		textSize(40);
+		text("Pepsi $5.50",722,715);
+	
+	}
+
+		if(mouseX > 700 && mouseX < 980 && mouseY > 790 && mouseY < 900)
+	{
+
+		fill(0,255,0);
+		rect(700,800,270,100);
+		fill(0,0,0);
+		textSize(40);
+		text("Chips $3.30",722,865);
+	
+	}
+			if(mouseX > 290 && mouseX < 355 && mouseY > 790 && mouseY < 1000)
+	{
+
+		fill(0,0,0);
+		rect(300,800,50,150);
+	
+	}
+	
+	if (mousePressed == true && mouseButton == LEFT)
+	{
+		if(mouseX > 700 && mouseX < 980 && mouseY > 497 && mouseY < 600)
+			{
+				link("http://img3.wikia.nocookie.net/__cb20120712170459/halo/images/7/70/Cookie.png");
+			
+			}
+		}
+		
+	mousePressed == false;
+		
+	if (mousePressed == true && mouseButton == LEFT)
+		{
+			if(mouseX > 700 && mouseX < 980 && mouseY > 640 && mouseY < 750)
+				{
+					link("http://pngimg.com/upload/pepsi_PNG7.png");
+				}
+			}
+			
+	if (mousePressed == true && mouseButton == LEFT)
+	{
+		if(mouseX > 700 && mouseX < 980 && mouseY > 790 && mouseY < 900)
+			{
+				link("http://www.fritolay.com/images/default-source/blue-bag-image/lays-classic.png?sfvrsn=2");
+			}
+		}	
 }
 
 </script>
@@ -67,4 +144,3 @@ text("Chips $3.30",722,865);
 
 </body>
 </html>
-
